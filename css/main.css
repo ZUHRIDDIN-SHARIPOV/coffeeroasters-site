@@ -196,4 +196,49 @@ img {
     width: 25px;
     margin-top: 7px;
   }
+}
+.hero {
+  margin-top: 130px;
+}
+
+.hero__block {
+  background-image: url("../../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 117px 0 116px 85px;
+}
+
+.hero__content-title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  line-height: 72px;
+  font-size: 72px;
+  color: #fefcf7;
+}
+
+.hero__content-text {
+  margin: 32px 0 56px 0;
+  font-family: "Barlow";
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  color: #fefcf7;
+  opacity: 0.8;
+}
+
+.hero__content-link {
+  font-family: "Fraunces";
+  font-weight: 900;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 31px 16px 31px;
+  font-size: 18px;
+  background-color: #0e8784;
+  color: #fefcf7;
+}
+.hero__content-link:hover {
+  background-color: #66d2cf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }/*# sourceMappingURL=main.css.map */
