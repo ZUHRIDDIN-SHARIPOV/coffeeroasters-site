@@ -37,6 +37,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #fefcf7;
 }
 
 ul,
@@ -73,4 +74,126 @@ img {
   width: 100%;
   height: auto;
   display: inline-block;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fefcf7;
+}
+
+.site-header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 44px 0 57px 0;
+}
+
+.site-header__logo {
+  max-width: 235px;
+}
+
+.site-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__item {
+  padding-left: 33px;
+}
+
+.site-header__item:first-child {
+  padding-left: 0;
+}
+
+.site-header__item:last-child {
+  padding-left: 32px;
+}
+
+.site-header__item-link {
+  font-family: "Barlow";
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  color: #fefcf7;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #83888f;
+}
+
+.site-header__menu-icon {
+  width: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.site-header__mobile {
+  max-width: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.site-header__mobile-list {
+  max-width: 77%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fefcf7;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+  transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+}
+
+.site-header__mobile-key {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.site-header__mobile-key + .site-header__mobile-list {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (max-width: 720px) {
+  .site-header__list {
+    display: none;
+  }
+  .site-header__menu-icon {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .site-header__logo {
+    width: 190px;
+    height: 18px;
+  }
+  .site-header__menu-icon {
+    width: 25px;
+    margin-top: 7px;
+  }
 }/*# sourceMappingURL=main.css.map */
