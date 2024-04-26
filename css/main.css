@@ -353,4 +353,133 @@ img {
   .hero__block {
     padding: 60px 0 99px 7px;
   }
+}
+.collection {
+  margin-bottom: 200px;
+}
+
+.collection__pic {
+  max-width: 1111px;
+  height: 196px;
+  margin: 0 auto;
+  background-image: url("../../images/collection-background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.collection__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px 30px;
+  margin-top: -70px;
+}
+
+.collection__item {
+  max-width: 256px;
+  text-align: center;
+}
+
+.collection__item-pic {
+  max-width: 256px;
+  width: 100%;
+}
+
+.collection__item-title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  line-height: 72px;
+  font-size: 72px;
+  color: #fefcf7;
+  line-height: 32px;
+  padding: 71.55px 0 24px 0;
+  font-size: 24px;
+  color: #333d4b;
+}
+
+.collection__item-text {
+  font-family: "Barlow";
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  color: #fefcf7;
+  color: #333d4b;
+}
+
+@media only screen and (max-width: 1154px) {
+  .collection__list {
+    gap: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .collection {
+    margin-bottom: 144px;
+  }
+  .collection__pic {
+    max-width: 689px;
+    height: 118px;
+  }
+  .collection__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -50px;
+    row-gap: 32px;
+  }
+  .collection__item {
+    max-width: 573px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
+    text-align: start;
+  }
+  .collection__item-title {
+    padding-top: 30px;
+  }
+  .collection__item-text {
+    line-height: 25px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .collection {
+    margin-bottom: 120px;
+  }
+  .collection__pic {
+    max-width: 100%;
+  }
+  .collection__list {
+    row-gap: 48px;
+    margin-top: -37px;
+  }
+  .collection__item {
+    max-width: 282px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .collection__item-pic {
+    width: 200px;
+  }
+  .collection__item-title {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
