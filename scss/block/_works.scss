@@ -1,0 +1,130 @@
+.works {
+  margin-bottom: 200px;
+}
+.works__container {
+  max-width: 1150px;
+}
+.works__title {
+  @include title;
+  line-height: 32px;
+  padding-bottom: 80px;
+  font-size: 24px;
+  color: $light-grey;
+}
+.works__content {
+  max-width: 790px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 67px;
+}
+.works__content-icon {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.works__content-line {
+  width: 100%;
+  height: 2px;
+  background-color: $orange;
+}
+.works__list {
+  display: flex;
+  column-gap: 95px;
+  padding-bottom: 64px;
+}
+.works__item {
+  max-width: 285px;
+}
+.works__item-num {
+  @include title;
+  color: $orange;
+}
+.works__item-title {
+  @include title;
+  line-height: 36px;
+  padding: 38px 0 43px 0;
+  font-size: 32px;
+  color: $dark-blue;
+}
+.works__item:first-child .works__item-title {
+  max-width: 255px;
+}
+.works__item-text {
+  @include text;
+  color: $dark-blue;
+}
+.works__link a {
+  @include button;
+}
+
+@media only screen and (max-width: 780px) {
+  .works__list {
+    column-gap: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .works {
+    margin-bottom: 144px;
+  }
+  .works__container {
+    max-width: 1320px;
+  }
+  .works__title {
+    padding-bottom: 40px;
+  }
+  .works__content {
+    max-width: 497px;
+    padding-bottom: 48px;
+  }
+  .works__list {
+    column-gap: 30px;
+    padding-bottom: 44px;
+  }
+  .works__item {
+    max-width: 213px;
+  }
+  .works__item-title {
+    padding: 42px 0 38px 0;
+    line-height: 32px;
+    font-size: 28px;
+  }
+  .works__item:first-child .works__item-title {
+    width: 100%;
+  }
+  .works__item-text {
+    line-height: 25px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .works {
+    margin-bottom: 120px;
+  }
+  .works__title {
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  .works__content {
+    display: none;
+  }
+  .works__list {
+    padding-bottom: 79px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 56px;
+  }
+  .works__item {
+    max-width: 327px;
+    text-align: center;
+  }
+  .works__item-title {
+    padding: 24px 0;
+  }
+  .works__item:first-child .works__item-title {
+    max-width: 327px;
+  }
+  .works__link {
+    text-align: center;
+  }
+}
