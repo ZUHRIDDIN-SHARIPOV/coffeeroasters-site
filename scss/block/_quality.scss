@@ -1,0 +1,125 @@
+.quality {
+  margin-bottom: 168px;
+}
+.quality__block {
+  padding: 88px 0 176px 85px;
+  border-radius: 10px;
+  display: flex;
+  column-gap: 125px;
+  background-color: $blue;
+}
+.quality__content {
+  max-width: 540px;
+}
+.quality__content-title {
+  @include title;
+  line-height: 48px;
+  font-size: 40px;
+}
+.quality__content-text {
+  @include text;
+  opacity: 0.8;
+  padding-top: 32px;
+}
+.quality__pic {
+  max-width: 445px;
+  width: 100%;
+  height: 474px;
+  margin-top: -176px;
+  border-radius: 12px;
+  background-image: url("../../images/quality-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1210px) {
+  .quality__block {
+    padding: 88px 0 70px 40px;
+  }
+  .quality__content {
+    max-width: 470px;
+  }
+  .quality__content-title {
+    line-height: 42px;
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 1087px) {
+  .quality__block {
+    column-gap: 70px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .quality__pic {
+    max-width: 370px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .quality {
+    margin-bottom: 144px;
+  }
+  .quality__block {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 64px;
+    padding: 0 74px 67px 74px;
+  }
+  .quality__content {
+    max-width: 540px;
+    text-align: center;
+  }
+  .quality__content-title {
+    line-height: 48px;
+    font-size: 32px;
+  }
+  .quality__content-text {
+    padding-top: 24px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .quality__pic {
+    max-width: 573px;
+    height: 320px;
+    margin-top: -160px;
+    background-image: url("../../images/quality-tablet-background.jpg");
+  }
+}
+@media only screen and (max-width: 656px) {
+  .quality {
+    margin-bottom: 120px;
+  }
+  .quality__block {
+    padding: 0 24px 61px 24px;
+  }
+  .quality__content {
+    max-width: 279px;
+  }
+  .quality__content-title {
+    line-height: 28px;
+    font-size: 28px;
+  }
+  .quality__pic {
+    max-width: 420px;
+    height: 300px;
+    margin-top: -78px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .quality__pic {
+    max-width: 350px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .quality__pic {
+    max-width: 300px;
+    height: 210px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .quality__pic {
+    max-width: 279px;
+    height: 156px;
+  }
+}
