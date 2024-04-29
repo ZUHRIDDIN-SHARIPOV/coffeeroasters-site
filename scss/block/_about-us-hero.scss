@@ -1,3 +1,84 @@
 .about-us-hero {
   margin: 130px 0 168px 0;
 }
+.about-us-hero__block {
+  padding: 137px 0 137px 85px;
+  border-radius: 10px;
+  background-image: url("../../images/about-us-hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-us-hero__content {
+  max-width: 445px;
+}
+.about-us-hero__content-title {
+  @include title;
+  line-height: 48px;
+  font-size: 40px;
+}
+.about-us-hero__content-text {
+  @include text;
+  opacity: 0.8;
+  padding-top: 24px;
+}
+
+@media only screen and (max-width: 930px) {
+  .about-us-hero__block {
+    background-position-x: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-us-hero {
+    margin-bottom: 144px;
+  }
+  .about-us-hero__block {
+    background-image: url("../../images/about-us-hero-tablet-background.jpg");
+    background-position-x: right;
+    padding: 118px 0 118px 58px;
+  }
+  .about-us-hero__content {
+    max-width: 394px;
+  }
+  .about-us-hero__content-title {
+    line-height: 40px;
+    font-size: 32px;
+  }
+  .about-us-hero__content-text {
+    line-height: 25px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .about-us-hero__block {
+    padding: 118px 0 118px 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-us-hero {
+    margin-bottom: 120px;
+  }
+  .about-us-hero__block {
+    padding: 111px 24px 87px 24px;
+  }
+  .about-us-hero__content {
+    max-width: 279px;
+  }
+  .about-us-hero__content-title {
+    line-height: 28px;
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .about-us-hero__block {
+    background-image: url("../../images/about-us-hero-mobile-background.jpg");
+    background-position-x: 0;
+  }
+  .about-us-hero__content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .about-us-hero__block {
+    background-position-x: right;
+  }
+}
