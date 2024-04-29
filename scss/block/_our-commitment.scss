@@ -1,0 +1,113 @@
+.our-commitment {
+  margin-bottom: 256px;
+}
+.our-commitment__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 125px;
+}
+.our-commitment__pic {
+  max-width: 445px;
+  flex-shrink: 0;
+}
+.our-commitment__content {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.our-commitment__content-title {
+  @include title;
+  line-height: 48px;
+  font-size: 40px;
+  color: $dark-blue;
+}
+.our-commitment__content-text {
+  @include text;
+  opacity: 0.8;
+  color: $dark-blue;
+}
+
+@media only screen and (max-width: 1160px) {
+  .our-commitment__block {
+    column-gap: 70px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .our-commitment__block {
+    column-gap: 50px;
+  }
+  .our-commitment__pic {
+    max-width: 380px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .our-commitment {
+    margin-bottom: 304px;
+  }
+  .our-commitment__block {
+    column-gap: 69px;
+  }
+  .our-commitment__pic {
+    max-width: 281px;
+    img {
+      height: 470px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+  .our-commitment__content {
+    max-width: 339px;
+    row-gap: 30px;
+  }
+  .our-commitment__content-title {
+    font-size: 32px;
+  }
+  .our-commitment__content-text {
+    line-height: 25px;
+    font-size: 15px;
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .our-commitment__block {
+    align-items: start;
+    column-gap: 50px;
+  }
+  .our-commitment__content-text {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 656px) {
+  .our-commitment {
+    margin-bottom: 198px;
+  }
+  .our-commitment__block {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+  }
+  .our-commitment__pic {
+    max-width: 327px;
+    img {
+      height: 400px;
+    }
+  }
+  .our-commitment__content {
+    max-width: 327px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 324px) {
+  .our-commitment__content-title {
+    line-height: 46px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 306px) {
+  .our-commitment__content-title {
+    line-height: 44px;
+    font-size: 28px;
+  }
+}
