@@ -1517,6 +1517,9 @@ img {
   .our-headquarters__block {
     max-width: 100%;
   }
+  .our-headquarters__title {
+    text-align: center;
+  }
   .our-headquarters__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
