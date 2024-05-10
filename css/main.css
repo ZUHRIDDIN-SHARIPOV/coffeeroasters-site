@@ -1552,5 +1552,33 @@ img {
   }
 }
 .subscribe-hero {
-  margin: 130px 0 123px 0;
+  margin: 130px 0 168px 0;
+}
+
+.subscribe-hero__block {
+  padding: 134px 0 134px 85px;
+  border-radius: 10px;
+  background-image: url("../../images/subscribe-hero-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.subscribe-hero__content {
+  max-width: 486px;
+}
+
+.subscribe-hero__content-title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  line-height: 72px;
+  font-size: 72px;
+  color: #fefcf7;
+  padding-bottom: 32px;
+}
+
+.subscribe-hero__content-text {
+  font-family: "Barlow";
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  color: #fefcf7;
 }/*# sourceMappingURL=main.css.map */
