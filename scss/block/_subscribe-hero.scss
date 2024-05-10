@@ -17,3 +17,96 @@
 .subscribe-hero__content-text {
   @include text;
 }
+
+@media only screen and (max-width: 768px) {
+  .subscribe-hero {
+    margin-bottom: 144px;
+  }
+  .subscribe-hero__block {
+    padding: 127px 0 126px 58px;
+    background-image: url("../../images/subscribe-hero-tablet-background.jpg");
+    background-size: cover;
+  }
+  .subscribe-hero__content {
+    max-width: 398px;
+  }
+  .subscribe-hero__content-title {
+    line-height: 48px;
+    padding-bottom: 24px;
+    font-size: 48px;
+  }
+  .subscribe-hero__content-text {
+    line-height: 25px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .subscribe-hero {
+    margin-bottom: 120px;
+  }
+  .subscribe-hero__block {
+    padding-top: 101px;
+    padding-bottom: 136px;
+    background-position-x: -70px;
+  }
+  .subscribe-hero__content {
+    max-width: 279px;
+  }
+  .subscribe-hero__content-title {
+    line-height: 40px;
+    padding-bottom: 22px;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .subscribe-hero__block {
+    background-position-x: -140px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .subscribe-hero__block {
+    padding-left: 40px;
+    background-position-x: -190px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .subscribe-hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-hero__block {
+    background-position-x: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-image: url("../../images/subscribe-hero-mobile-background.jpg");
+  }
+  .subscribe-hero__content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .subscribe-hero__block {
+    padding: 90px 24px 120px 24px;
+  }
+  .subscribe-hero__content {
+    max-width: 236px;
+    text-align: start;
+  }
+  .subscribe-hero__content-title {
+    line-height: 35px;
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 323px) {
+  .subscribe-hero__content-title {
+    line-height: 32px;
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 304px) {
+  .subscribe-hero__content-title {
+    line-height: 31px;
+    font-size: 31px;
+  }
+}
