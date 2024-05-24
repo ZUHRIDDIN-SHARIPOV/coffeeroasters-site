@@ -8,3 +8,12 @@ menuIcon.onclick = () => {
 siteHeaderMobile.onclick = () => {
   siteHeaderMobile.classList.remove("site-header__mobile-key");
 };
+
+const question = document.querySelectorAll(".question");
+
+question.forEach((item) => {
+  item.onclick = () => {
+    const accordion = item.parentElement;
+    accordion.classList.toggle("open");
+  };
+});
