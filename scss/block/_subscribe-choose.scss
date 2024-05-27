@@ -184,6 +184,39 @@
     transform: translateY(0);
   }
 }
+.subscribe-choose__content {
+  margin-top: 88px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.subscribe-choose__content div {
+  max-width: 730px;
+  padding: 47px 64px;
+  margin-left: auto;
+  border-radius: 10px;
+  background: $blue;
+}
+.subscribe-choose__content-title {
+  @include text;
+  text-transform: uppercase;
+  opacity: 0.5037;
+  padding-bottom: 8px;
+  color: $light;
+}
+.subscribe-choose__content-text {
+  @include title;
+  line-height: 40px;
+  font-size: 24px;
+  color: $light;
+  span {
+    color: #0e8784;
+  }
+}
+.subscribe-choose__content-link {
+  @include button;
+}
 
 @media only screen and (max-width: 1160px) {
   .subscribe-choose__block {
@@ -244,6 +277,15 @@
   .accordion.open .answer-body {
     max-height: 870px;
   }
+  .subscribe-choose__content {
+    margin-top: 144px;
+    align-items: center;
+  }
+  .subscribe-choose__content div {
+    max-width: 689px;
+    padding: 27px 44px;
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 420px) {
   .subscribe-choose {
@@ -270,6 +312,13 @@
   }
   .answer-card-title {
     padding-bottom: 8px;
+  }
+  .subscribe-choose__content {
+    margin-top: 120px;
+    row-gap: 56px;
+  }
+  .subscribe-choose__content div {
+    padding: 32px 25px;
   }
 }
 @media only screen and (max-width: 350px) {

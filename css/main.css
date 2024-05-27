@@ -2122,6 +2122,72 @@ img {
             transform: translateY(0);
   }
 }
+.subscribe-choose__content {
+  margin-top: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.subscribe-choose__content div {
+  max-width: 730px;
+  padding: 47px 64px;
+  margin-left: auto;
+  border-radius: 10px;
+  background: #2c343e;
+}
+
+.subscribe-choose__content-title {
+  font-family: "Barlow";
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  color: #fefcf7;
+  text-transform: uppercase;
+  opacity: 0.5037;
+  padding-bottom: 8px;
+  color: #fff;
+}
+
+.subscribe-choose__content-text {
+  font-family: "Fraunces";
+  font-weight: 900;
+  line-height: 72px;
+  font-size: 72px;
+  color: #fefcf7;
+  line-height: 40px;
+  font-size: 24px;
+  color: #fff;
+}
+.subscribe-choose__content-text span {
+  color: #0e8784;
+}
+
+.subscribe-choose__content-link {
+  font-family: "Fraunces";
+  font-weight: 900;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 31px 16px 31px;
+  font-size: 18px;
+  background-color: #0e8784;
+  color: #fefcf7;
+}
+.subscribe-choose__content-link:hover {
+  background-color: #66d2cf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 @media only screen and (max-width: 1160px) {
   .subscribe-choose__block {
     -webkit-column-gap: 70px;
@@ -2187,6 +2253,17 @@ img {
   .accordion.open .answer-body {
     max-height: 870px;
   }
+  .subscribe-choose__content {
+    margin-top: 144px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe-choose__content div {
+    max-width: 689px;
+    padding: 27px 44px;
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 420px) {
   .subscribe-choose {
@@ -2218,6 +2295,13 @@ img {
   }
   .answer-card-title {
     padding-bottom: 8px;
+  }
+  .subscribe-choose__content {
+    margin-top: 120px;
+    row-gap: 56px;
+  }
+  .subscribe-choose__content div {
+    padding: 32px 25px;
   }
 }
 @media only screen and (max-width: 350px) {
